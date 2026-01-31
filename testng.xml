@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="OrangeHRM Suite" verbose="1">
-  <test name="Leave Tests">
-    <classes>
-      <class name="Demo.LeaveTest"/>
-    </classes>
-  </test>
+<suite name="OrangeHRM Suite" verbose="1" parallel="false">
+<test name="Leave Tests">
+<classes>
+<class name="com.orhrm.tests.LeaveTests"/>
+</classes>
+</test>
 </suite>
