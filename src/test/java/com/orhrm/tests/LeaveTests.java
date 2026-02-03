@@ -2,6 +2,7 @@ package com.orhrm.tests;
 
 import java.time.Duration;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,29 +12,42 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.orhrm.Base.BaseTest;
 import com.orhrm.page.Login_POM;
 import com.orhrm.utilities.configreader;
+import com.orhrm.utilities.extentmanager;
+import com.orhrm.utilities.screenshotutil;
+import com.orhrm.utilities.extentmanager;
 
 @Listeners(com.orhrm.listeners.TestListener.class)
 
 
-public class LeaveTests extends BaseTest {
 
+
+public class LeaveTests extends BaseTest {
+//ExtentReports extent = extentmanager.getreport();
     private void login() throws Exception {
+    	
         Login_POM lp = new Login_POM(driver);
         String uname= configreader.getproperty("username");
         String pass= configreader.getproperty("password");
         lp.login(uname,pass);
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.titleIs("OrangeHRM"));
+        
+              
     }
-
-
+    
+    ExtentReports extent = extentmanager.getreport();
+    ExtentTest test = extent.createTest("leave");
     @Test
     public void addLeaveType() throws Exception {
       login();
       Login_POM lp2 = new Login_POM(driver);
+     // ExtentTest test = extent.createTest("leave test");
       lp2.clickonleave1();
 
       // Navigate: Leave -> Configure -> Leave Types
@@ -50,7 +64,7 @@ public class LeaveTests extends BaseTest {
       WebElement nameInput = driver.findElement(By.xpath("//label[normalize-space()='Name']/following::input[1]"));
       nameInput.click();
       nameInput.clear();
-      nameInput.sendKeys("dgvas");
+      nameInput.sendKeys("dgjhs");
 
       // Save
       WebElement saveBtn = driver.findElement(By.xpath("//button[@type='submit' and (normalize-space()='Save')]"));
@@ -68,14 +82,12 @@ public class LeaveTests extends BaseTest {
       } else {
           System.out.println("Leave Type  added");
       }
-
+      String ss = screenshotutil.capturescreenshot(driver);
+      test.pass("Test passed").addScreenCaptureFromPath(ss);
       Thread.sleep(500);
+      
+     
+      
   }
 
-    // Future tests:
-    // @Test(priority = 3)
-    // public void applyLeave() throws Exception { /* implement via POMs as needed */ }
-
-    // @Test(priority = 4)
-    // public void assignLeave() throws Exception { /* implement via POMs as needed */ }
-}
+    }
