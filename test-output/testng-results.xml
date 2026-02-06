@@ -1,25 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-03T15:59:12 IST" name="Default suite" finished-at="2026-02-03T16:00:35 IST" duration-ms="82267">
+  <suite started-at="2026-02-06T16:04:22 IST" name="Default suite" finished-at="2026-02-06T16:06:55 IST" duration-ms="152837">
     <groups>
     </groups>
-    <test started-at="2026-02-03T15:59:12 IST" name="Default test" finished-at="2026-02-03T16:00:35 IST" duration-ms="82267">
+    <test started-at="2026-02-06T16:04:22 IST" name="Default test" finished-at="2026-02-06T16:06:55 IST" duration-ms="152837">
       <class name="com.orhrm.tests.LeaveTests">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@54e041a4]" started-at="2026-02-03T15:59:13 IST" name="beforeMethod" finished-at="2026-02-03T15:59:36 IST" duration-ms="23001" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:04:22 IST" name="beforeMethod" finished-at="2026-02-06T16:04:32 IST" duration-ms="10549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="addLeaveType()[pri:0, instance:com.orhrm.tests.LeaveTests@54e041a4]" started-at="2026-02-03T15:59:36 IST" name="addLeaveType" finished-at="2026-02-03T16:00:34 IST" duration-ms="58450" status="PASS">
+        <test-method signature="addLeaveType()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:04:32 IST" name="addLeaveType" finished-at="2026-02-06T16:04:49 IST" duration-ms="16350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addLeaveType -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@54e041a4]" started-at="2026-02-03T16:00:34 IST" name="afterMethod" finished-at="2026-02-03T16:00:35 IST" duration-ms="717" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:04:49 IST" name="afterMethod" finished-at="2026-02-06T16:04:49 IST" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:04:49 IST" name="beforeMethod" finished-at="2026-02-06T16:04:59 IST" duration-ms="9055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTestWithInvalidUsername()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:04:59 IST" name="loginTestWithInvalidUsername" finished-at="2026-02-06T16:05:05 IST" duration-ms="6925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestWithInvalidUsername -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:05:05 IST" name="afterMethod" finished-at="2026-02-06T16:05:06 IST" duration-ms="819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:05:06 IST" name="beforeMethod" finished-at="2026-02-06T16:05:16 IST" duration-ms="9667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTestWithValidCredential()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:05:16 IST" name="loginTestWithValidCredential" finished-at="2026-02-06T16:05:31 IST" duration-ms="14869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestWithValidCredential -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:05:31 IST" name="afterMethod" finished-at="2026-02-06T16:05:32 IST" duration-ms="946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:05:32 IST" name="beforeMethod" finished-at="2026-02-06T16:05:42 IST" duration-ms="10491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="pimSearch_EmployeeFilters()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:05:42 IST" name="pimSearch_EmployeeFilters" finished-at="2026-02-06T16:06:05 IST" duration-ms="23069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pimSearch_EmployeeFilters -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:06:05 IST" name="afterMethod" finished-at="2026-02-06T16:06:06 IST" duration-ms="848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:06:06 IST" name="beforeMethod" finished-at="2026-02-06T16:06:17 IST" duration-ms="10740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="time_Timesheets_then_ProjectInfo_Customers_Add()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:06:17 IST" name="time_Timesheets_then_ProjectInfo_Customers_Add" finished-at="2026-02-06T16:06:38 IST" duration-ms="21329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- time_Timesheets_then_ProjectInfo_Customers_Add -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.orhrm.tests.LeaveTests@4149c063]" started-at="2026-02-06T16:06:38 IST" name="afterMethod" finished-at="2026-02-06T16:06:39 IST" duration-ms="954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.orhrm.tests.LeaveTests -->
+      <class name="com.orhrm.tests.NewTest">
+        <test-method signature="appium()[pri:0, instance:com.orhrm.tests.NewTest@2f666ebb]" started-at="2026-02-06T16:06:39 IST" name="appium" finished-at="2026-02-06T16:06:55 IST" duration-ms="15331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appium -->
+      </class> <!-- com.orhrm.tests.NewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

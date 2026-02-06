@@ -52,12 +52,7 @@
 <artifactId>webdrivermanager</artifactId>
 <version>5.9.2</version>
 </dependency>
-<!-- ExtentReports -->
-<dependency>
-<groupId>com.aventstack</groupId>
-<artifactId>extentreports</artifactId>
-<version>5.1.1</version>
-</dependency>
+
 <!-- Apache Commons IO (FileUtils) -->
 <dependency>
 <groupId>commons-io</groupId>
@@ -71,5 +66,13 @@
   	<artifactId>Mavetest</artifactId>
   	<version>0.0.1-SNAPSHOT</version>
   </dependency>
+  
+<!-- Appium -->
+    <dependency>
+        <groupId>io.appium</groupId>
+        <artifactId>java-client</artifactId>
+        <version>10.0.0</version>
+    </dependency>
+
   </dependencies>
 </project>

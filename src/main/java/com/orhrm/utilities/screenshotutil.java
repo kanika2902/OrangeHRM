@@ -21,5 +21,10 @@ destfile.getParentFile().mkdirs();
 FileUtils.copyFile(src, destfile);
 return destfile.getAbsolutePath();
 }
+
+public static String takePng(WebDriver driver, String msg) {
+	// TODO Auto-generated method stub
+	return null;
+}
 }
 

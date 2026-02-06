@@ -5,8 +5,8 @@
     <classes>
       <class name="com.orhrm.tests.LeaveTests">
         <methods>
+          <include name="loginTestWithValidCredential"/>
           <include name="afterMethod"/>
-          <include name="addLeaveType"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.orhrm.tests.LeaveTests -->
