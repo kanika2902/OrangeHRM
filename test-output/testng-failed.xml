@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.orhrm.tests.LeaveTests">
+      <class name="com.orhrm.tests.NewTest">
         <methods>
-          <include name="loginTestWithValidCredential"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="appium"/>
         </methods>
-      </class> <!-- com.orhrm.tests.LeaveTests -->
+      </class> <!-- com.orhrm.tests.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

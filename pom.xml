@@ -61,11 +61,7 @@
 </dependency>
 
     
-  <dependency>
-  	<groupId>com.testing</groupId>
-  	<artifactId>Mavetest</artifactId>
-  	<version>0.0.1-SNAPSHOT</version>
-  </dependency>
+  
   
 <!-- Appium -->
     <dependency>
@@ -75,4 +71,30 @@
     </dependency>
 
   </dependencies>
+  
+  <build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.13.0</version>
+      <configuration>
+        <source>11</source>   <!-- or your JDK version -->
+        <target>11</target>
+      </configuration>
+    </plugin>
+ 
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>3.2.5</version>
+      <configuration>
+        <suiteXmlFiles>
+          <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+        </suiteXmlFiles>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+  
 </project>

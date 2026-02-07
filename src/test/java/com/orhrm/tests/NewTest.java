@@ -4,25 +4,45 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.orhrm.utilities.extentmanager;
+import com.orhrm.utilities.screenshotutil;
+
 import java.net.URL;
 import java.time.Duration;
 import java.util.List;
 public class NewTest {
+	
+	ExtentReports extent = extentmanager.getreport();
+	
     @Test
     public void appium() throws Exception {
+    	
+    	ExtentTest test = extent.createTest("Chrome App");
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("platformName", "Android");
-        caps.setCapability("appium:automationName", "UiAutomator2");
-        caps.setCapability("appium:udid", "emulator-5556");
-        caps.setCapability("appium:deviceName", "Android Emulator");
-        caps.setCapability("appium:autoGrantPermissions", true);
-        caps.setCapability("appium:noReset", true);
-        caps.setCapability("appium:appPackage", "com.google.android.youtube");
-        caps.setCapability("appium:appActivity", "com.google.android.apps.youtube.app.WatchWhileActivity");
-        caps.setCapability("appium:appWaitActivity", "com.google.android.apps.youtube.app.*");
+
+        caps.setCapability("platformName","Android");
+        caps.setCapability("appium:automationName","UiAutomator2");
+        caps.setCapability("appium:udid","emulator-5556");
+       
+
+        // Launch Chrome
+        caps.setCapability("appium:appPackage", "com.android.chrome");
+        caps.setCapability("appium:appActivity", "com.google.android.apps.chrome.Main");
+
+        // Optional for stability
+        caps.setCapability("appium:chromedriverAutodownload", true);
+
         AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), caps);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
-        System.out.println("YouTube App started");
+        System.out.println("chrome App started");
+        
+        String ss = screenshotutil.capturescreenshot(driver);
+        test.pass("Test Passed").addScreenCaptureFromBase64String(ss);
+        test.info("chrome openedn and finish");
+        extent.flush();
         System.out.println("Current Activity: " + driver.currentActivity());
         By searchXpath = By.xpath("//android.view.ViewGroup[@content-desc=\"Search YouTube\"]");
         boolean found = false;
