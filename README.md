@@ -45,3 +45,11 @@ This project focuses on **end-to-end testing of the OrangeHRM web application** 
 - Maven for dependency management
 
 ---
+
+## ✅ Conclusion
+
+This OrangeHRM Software Testing project provided hands-on experience in **manual and automation testing** of a real-world HR application. Through structured test planning, defect tracking, and Selenium-based automation, the project strengthened understanding of **STLC, test design techniques, and regression testing**.  
+It also helped in developing practical skills with **industry-standard QA tools** and building a **maintainable automation framework** suitable for real-time projects.
+
+---
+
